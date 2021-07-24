@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4f746bebe5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./update_stock.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Pikabooks / update Stock</title>
+</head>
+<body>
+    <div class="overlay hide "></div>
+    <header>
+        <div class="container">
+        <div class="search">
+            <img src="./pic/icon/search.png" alt="">
+            <input type="search" name="btnsearch" id="btnsearch"  placeholder="Search Books ...">
+        </div>
+        <div class="fontHead">
+            <h1>PIKABOOKS</h1>
+        </div>
+        <div class="navbar_1">
+            <ul>
+                <a href="./Login.html"><img src="./pic/icon/user.png" alt="" class="user"></a>
+                <li class="iconLogin"><a href="./Login.html">Login</a></li>
+                <li>OR</li>
+                <li class="iconRegister"> <a href="./Register.html">Register</a></li>
+                <img class= "iconCartTop" src="./pic/icon/cart.png" alt="" class="cart">
+            </ul>
+        </div>
+    </div>
+    </header>
+    <nav class="navbar_2">
+        <div class="container">
+            <ul class="navbar2_ul">
+                <div class="btnHome"><a href="./index.html"> Home</a></div>
+                <div class="btnAllSeries"><a href="./allseries.html">All Series</a></div>
+                <div class="btnManga"><a href="./manga.html">Manga</a></div>
+                <div class="btnLightNovel"><a href="./lightnovel.html">Light Novel</a></div>
+                <div class="btnHowToBuy"><a href="./howtobuy.html">How To Buy</a></div>
+                
+            </ul>
+        </div>
+    </nav>
+  
+    <section class="bookShelft">
+        <div class="outline"></div>
+        <div class="container6">
+            <div class="boxHead">
+                <p>In Stock</p>
+                <button class="btnAdd"> + Add New Product</button>
+            </div>
+            <div class="boxelemet">
+                <div class="titleHead">
+                    <p>Code</p>
+                    <p>Product</p>
+                    <p>Catagory</p>
+                    <p>Price</p>
+                    <p>Discount</p>
+                    <p>Exsample Read</p>
+                    <p>Synopsis</p>
+                    <p>Quantity</p>
+                </div>
+                <div class="box_stock">
+                    <p>PK001</p>
+                    <input type="file">
+                    <form action="">
+                        <select name="catagory" id="catagory">
+                            <option value="manga">Manga</option>
+                            <option value="lightnovel">Light Novel</option>
+                        </select>
+                    </form>
+                    <input type="number">
+                    <input type="number">
+                    <input type="file">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <div class="box_stock">
+                    <p>PK002</p>
+                    <input type="file">
+                    <form action="">
+                        <select name="catagory" id="catagory">
+                            <option value="manga">Manga</option>
+                            <option value="lightnovel">Light Novel</option>
+                        </select>
+                    </form>
+                    <input type="number">
+                    <input type="number">
+                    <input type="file">
+                    <input type="text">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+       
+       
+    </section>
+    <div class="sidebar hide">
+        <div class="sidebarHead">
+            <div class="sidebartext">
+                <p>ตระกร้าสินค้า</p>
+                    <img class="btnDelBooks" src="./pic/icon/del.png" alt="">
+            </div>
+            <div class="outlinesidebar"></div>
+            
+        </div>
+            <ul class="product-list">
+                <li class="product-item">
+                    <img src="./pic/cover/Kimetsu_no_Yaiba_V23_EN.png" alt="">
+                    <div class="product-text">
+                        <P class="nameThai">ดาบพิฆาตอสูร</p>
+                        <P class="volumebooks">เล่ม 23 (จบ) </p>
+                            <div class="btnCount">
+                                <button class="btnMinus">-</button>
+                                <div class="count">
+                                    <p>1</p>
+                                </div>
+                                <button class="btnPlus">+</button>
+                            </div>
+                    </div>
+                    <div class="product-price">
+                        <div class="discount">
+                            <P class="numberPrice">85</P>
+                            <P class="currency">THB</P>
+                        </div>
+                        <div class="product-del">
+                            <img class="btnDelBooks" src="./pic/icon/del.png" alt="">
+                            <p>ลบ</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        <div class="boxsummary">
+            <h3>สรุปคำสั่งซื้อ</h3>
+            <div class="boxPricePack">
+                <p>ค่าจัดส่ง</p>
+                <p class="pricePack">30</p>
+            </div>
+            <div class="sumPrice">
+                <p>ราคาสุทธิ</p>
+                <p class="finalPrice" >115</p>
+            </div>
+            <div class="boxBtn">
+                <p> <a href="#">ช้อปปิ้งต่อ</a></p>
+                <button class="btnBuy" >สั่งซื้อ</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container3">
+            <div class="contact">
+            <div class="logo"><img src="./pic/logo/LogoPikabooks.png" alt=""></div>
+            <div class="myAdress">
+                <p class="company">PIKABOOKS CO., Ltd</p>
+                <p>39/60 ถ. นวมินทร์ /แขวง บึงกุ่ม กทม. 10230</p>
+                <p>02-555-5555</p>
+            </div>
+            <div class="social">
+                <img class="facebook" src="./pic/icon/Facebook.png" alt="">
+                <img class="twitter" src="./pic/icon/Twitter.png" alt="">
+                <img class="line" src="./pic/icon/Line.png" alt="">
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
+
